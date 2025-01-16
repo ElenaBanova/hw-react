@@ -1,5 +1,6 @@
 import {ITodosResponse} from "../models/ITodosResponse.ts";
 
+
 const baseURL = import.meta.env.VITE_API_URL;
 
 export const getTodoComponents = async (): Promise<ITodosResponse> => {
@@ -8,5 +9,3 @@ export const getTodoComponents = async (): Promise<ITodosResponse> => {
         .then(value => value.json())
 
 };
-
-export default getTodoComponents;
