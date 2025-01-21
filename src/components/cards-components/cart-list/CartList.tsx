@@ -3,7 +3,7 @@ import useCartList from "./useCartList.ts";
 
 
 const CartList = () => {
-    const {carts} = useCartList()
+    const carts = useCartList()
 
     return (
         <div>
